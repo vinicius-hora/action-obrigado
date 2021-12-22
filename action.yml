@@ -1,7 +1,7 @@
 name: 'Muito obrigado'
 description: 'Obrigado pelo novo pull requests'
 author: 'Vinicius Hora'
-#definição dos tokens
+
 inputs:
   GITHUB_TOKEN: 
     description: 'GITHUB_TOKEN'
@@ -9,8 +9,7 @@ inputs:
   TENOR_TOKEN: 
     description: 'TENOR_TOKEN'
     required: true
-
-#comandos
+    
 runs:
   using: 'node12'
   main: 'dist/index.js'
