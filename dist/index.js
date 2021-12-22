@@ -8273,10 +8273,10 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
-/***/ 9774:
+/***/ 7348:
 /***/ ((module) => {
 
-module.exports = eval("require")("@actions/axios");
+module.exports = eval("require")("@node-fetch");
 
 
 /***/ }),
@@ -8450,10 +8450,10 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-const fetch = __nccwpck_require__(467);
+const fetch = __nccwpck_require__(7348);
 const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
-const axios = __nccwpck_require__(9774);
+
 
 async function run(){
     const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
