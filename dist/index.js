@@ -8455,7 +8455,7 @@ async function run(){
     await octokit.issues.createComment({
         ...context.repo,
         issue_number: pull_request.number,
-        body: 'Obrigado pelo Pull Request!'
+        body: `Obrigado pelo Pull Request!`
       });
 }
 
