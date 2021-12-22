@@ -12480,6 +12480,14 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
+/***/ 9774:
+/***/ ((module) => {
+
+module.exports = eval("require")("@actions/axios");
+
+
+/***/ }),
+
 /***/ 2877:
 /***/ ((module) => {
 
@@ -15254,6 +15262,7 @@ var __webpack_exports__ = {};
 const fetch = __nccwpck_require__(7580);
 const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
+const axios = __nccwpck_require__(9774);
 
 async function run(){
     const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
@@ -15261,7 +15270,7 @@ async function run(){
 
     const randomPos = Math.round(Math.random() * 100);
     const url = `https://api.tenor.com/v1/search?q=thank%20you&pos=${randomPos}&limit=1&media_filter=minimal&contentfilter=high&key=${TENOR_TOKEN}`;
-    const response = await fetch(url);
+    const response = await axios(url);
     const { results } = await response.json();
     const gifUrl = results[0].media[0].tinygif.url;
 
