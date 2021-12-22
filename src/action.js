@@ -9,7 +9,7 @@ async function run(){
 
     const randomPos = Math.round(Math.random() * 100);
     const url = `https://api.tenor.com/v1/search?q=thank%20you&pos=${randomPos}&limit=1&media_filter=minimal&contentfilter=high&key=${TENOR_TOKEN}`;
-    const response = await axios(url);
+    const response = await fetch(url);
     const { results } = await response.json();
     const gifUrl = results[0].media[0].tinygif.url;
 
