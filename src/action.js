@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const core = require('@actions/core');
 const github = require('@actions/github');
-const axios = require('@actions/axios');
+
 
 async function run(){
     const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
